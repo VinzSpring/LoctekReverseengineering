@@ -35,7 +35,7 @@ def weight_string(bits: str, table):
                 weights[x] += score
     # normalize
     m = max(weights)
-    return [v / m for v in weights]
+    return [v / m for v in weights] if m else weights
 
 def visualize_samples(samples, table):
     l = len(samples)
@@ -50,16 +50,15 @@ def visualize_samples(samples, table):
         sub.bar(x, y, width=1)
     plt.show()
 
-def convert(ls):
-    mapping = {}
-    for i, l in enumerate(ls):
-        mapping(string.un)
-
+def encode(hex):
+    return hex.decode("latin-1")
 
 if __name__ == "__main__":
+
+
     with open("./going_down_75_71_no_btn_R.txt") as f:
         ls = get_packets(f.readlines())
 
     table = get_pattern_table("".join(["".join(l) for l in ls]))
     sample = "".join(ls[0])
-    visualize_samples([sample, sample], table)
+    visualize_samples("".join(["".join(l) for l in ls]), table)
