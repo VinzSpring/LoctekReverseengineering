@@ -3,6 +3,8 @@ from pprint import pprint as p
 from matplotlib import pyplot as plt
 import numpy as np
 from math import *
+from data_prepare import *
+import string 
 
 import random
 
@@ -48,7 +50,16 @@ def visualize_samples(samples, table):
         sub.bar(x, y, width=1)
     plt.show()
 
+def convert(ls):
+    mapping = {}
+    for i, l in enumerate(ls):
+        mapping(string.un)
+
+
 if __name__ == "__main__":
-    table = get_pattern_table("01010101000001011110010110010101001000010111101011001010000010111110111111001010101001010101011")
-    sample = "000001111010101010000"
-    visualize_samples([shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample)], table)
+    with open("./going_down_75_71_no_btn_R.txt") as f:
+        ls = get_packets(f.readlines())
+
+    table = get_pattern_table("".join(["".join(l) for l in ls]))
+    sample = "".join(ls[0])
+    visualize_samples([sample, sample], table)
