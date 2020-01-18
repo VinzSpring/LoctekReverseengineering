@@ -61,9 +61,10 @@ baud-rate: 9600
 
 
 ### assumptions:
-packet
+packet-structure:
+
 | Start | LEN (inclusive LEN) | DATA | STOP |
-| --- | --- | --- |  --- |
+| --- | --- | --- | --- |
 | 9B | 04 | 15,BF,C2 | 9D |
 
 ### after sorting things we get these packets:
