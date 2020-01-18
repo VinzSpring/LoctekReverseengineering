@@ -63,7 +63,7 @@ baud-rate: 9600
 ### assumptions:
 packet-structure:
 
-| Start | LEN (inclusive LEN) | DATA | STOP |
+| Start | LEN (including LEN) | DATA | STOP |
 | --- | --- | --- | --- |
 | 9B | 04 | 15,BF,C2 | 9D |
 
