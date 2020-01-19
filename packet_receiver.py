@@ -27,8 +27,9 @@ class SerialPacketReceiver(AbstractPacketReceiver):
             print("listening on port ", conn.name)
             buff = []
             while not self.stop_listening:
-                byte = conn.read()
-                buff.append(byte)
+                byte = conn.read().hex().upper()
+
+                buff.append(byte)                
                 if buff and buff[0] != Packet.BYTE.START:
                         buff = []
                 elif Packet.is_valid_packet(buff):

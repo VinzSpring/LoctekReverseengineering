@@ -3,8 +3,6 @@ from pprint import pprint as p
 from matplotlib import pyplot as plt
 import numpy as np
 from math import *
-from data_prepare import *
-import string 
 
 import random
 
@@ -33,9 +31,9 @@ def weight_string(bits: str, table):
             score = table[pattern]
             for x in range(i, j):
                 weights[x] += score
-    # normalize
+    # normalizegit
     m = max(weights)
-    return [v / m for v in weights] if m else weights
+    return [v / m for v in weights]
 
 def visualize_samples(samples, table):
     l = len(samples)
@@ -50,15 +48,7 @@ def visualize_samples(samples, table):
         sub.bar(x, y, width=1)
     plt.show()
 
-def encode(hex):
-    return hex.decode("latin-1")
-
 if __name__ == "__main__":
-
-
-    with open("./going_down_75_71_no_btn_R.txt") as f:
-        ls = get_packets(f.readlines())
-
-    table = get_pattern_table("".join(["".join(l) for l in ls]))
-    sample = "".join(ls[0])
-    visualize_samples("".join(["".join(l) for l in ls]), table)
+    table = get_pattern_table("01010101000001011110010110010101001000010111101011001010000010111110111111001010101001010101011")
+    sample = "000001111010101010000"
+    visualize_samples([shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample), shuffle(sample)], table)
