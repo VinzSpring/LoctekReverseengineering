@@ -15,7 +15,7 @@
 
 baud-rate: 9600
 
-## packets when going from 75 to 71cm (memory setting 1)
+## frames when going from 75 to 71cm (memory setting 1)
 ### RX
 ```
 9B,04,15,BF,C2,9D,9B,04,11,7C,C3,9D
@@ -63,7 +63,7 @@ baud-rate: 9600
 ### assumptions:
 packet-structure:
 
-| Start | LEN (inclusive LEN) | DATA | STOP |
+| Start | LEN (including LEN) | DATA | STOP |
 | --- | --- | --- | --- |
 | 9B | 04 | 15,BF,C2 | 9D |
 
