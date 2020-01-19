@@ -1,6 +1,10 @@
 import re
 from pprint import pprint as p
 
+"""
+DEPRECATED, TEST-SCRIPT
+"""
+
 class BYTE:
     START = "9B"
     STOP = "9D"
