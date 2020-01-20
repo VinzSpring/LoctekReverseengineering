@@ -19,6 +19,25 @@ Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
 Received packet with contents:  ['9B', '07', '12', '07', '86', '3F', '09', '07', '9D']
 
 ..................................................................................................................
+71.1cm
+Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
+Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
+Received packet with contents:  ['9B', '07', '12', '07', '86', '06', '1B', 'C7', '9D']
+
+71.3cm
+Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
+Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
+Received packet with contents:  ['9B', '07', '12', '07', '86', '4F', 'ED', '06', '9D']
+
+71.4cm
+Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
+Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
+Received packet with contents:  ['9B', '07', '12', '07', '86', '66', '33', 'C7', '9D']
+
+71.5cm
+Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
+Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
+Received packet with contents:  ['9B', '07', '12', '07', '86', '6D', 'F4', '86', '9D']
 
 72cm 
 Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D'] //looks like heartbeat

@@ -4,7 +4,7 @@ from packet_processor import CompositePacketProcessor, PacketProcessorLogger, Pa
 
 if __name__ == "__main__":
 
-    receiver = PulseViewFilePacketReceiver("./samples/71_with_unknown_offsets_no_btns.txt")
+    receiver = PulseViewFilePacketReceiver("./samples/71.5_no_btns.txt")
     # receiver = SerialPacketReceiver("COM3", 9600)
     processor = CompositePacketProcessor(PacketProcessorLogger(), PacketProcessorPersister())
 
