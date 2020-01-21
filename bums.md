@@ -1,19 +1,19 @@
-71cm
+71.0cm
 Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
 Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
 Received packet with contents:  ['9B', '07', '12', '07', '86', '3F', '09', '07', '9D']
 
-71cm (2nd)
+71.0cm (2nd)
 Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
 Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
 Received packet with contents:  ['9B', '07', '12', '07', '86', '3F', '09', '07', '9D']
 
-71cm (3rd)
+71.0cm (3rd)
 Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
 Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
 Received packet with contents:  ['9B', '07', '12', '07', '86', '3F', '09', '07', '9D']
 
-71cm (4th)
+71.0cm (4th)
 Received packet with contents:  ['9B', '04', '15', 'BF', 'C2', '9D']
 Received packet with contents:  ['9B', '04', '11', '7C', 'C3', '9D']
 Received packet with contents:  ['9B', '07', '12', '07', '86', '3F', '09', '07', '9D']

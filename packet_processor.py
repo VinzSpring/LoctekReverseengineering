@@ -26,3 +26,28 @@ class CompositePacketProcessor(AbstractPacketProcessor):
             processor.on_packet_recv(packet)
 
 
+class TM1650PacketProcessor(AbstractPacketProcessor):
+    def on_packet_recv(self, packet: Packet)-> None:
+
+        if len(packet.raw_bytes) < 9:
+            return
+
+        _SEG = ["3F", "06", "5B", "4F", "66", "6D", "7D", "07", "7F", "6F", "77", "7C", "39", "5E", "79", "71"]
+        payload = packet.raw_bytes[3:-3]
+        print(payload)
+        decrypt = ""
+        for i , c in enumerate(payload):
+            if c in _SEG:
+                decrypt += str(_SEG.index(c))
+            else:
+                j = hex(int(c[0], 16) - 0x08)[2:]
+                print(j)
+                decrypt += str(_SEG.index(j + c[1])) 
+                decrypt += "."
+        print(decrypt)
+
+
+
+
+
+
