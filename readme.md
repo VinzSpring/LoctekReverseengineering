@@ -94,3 +94,5 @@ what to display as raw bytes. Now we can decode this information
 Taddaaaaa.
 
 Shoutout to @devmanuel for being apart of this journey. 👍
+
+Make sure to have a look at the utilities created alongside this project.
