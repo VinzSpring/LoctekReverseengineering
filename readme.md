@@ -86,3 +86,11 @@ packet-structure:
 9B,07,12,07,DB,4F,7D,3E,9D
 9B,07,12,07,DB,7D,A8,BF,9D
 ```
+When we look at the conroller board we can
+identify a TM1650 LED controller. When looking at its
+datasheet we can see how stuff works. Turns out the desk sends exactly
+what to display as raw bytes. Now we can decode this information
+(take a look at the python example) to get the displayed height.
+Taddaaaaa.
+
+Shoutout to @devmanuel for being apart of this journey. 👍

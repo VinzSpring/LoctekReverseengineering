@@ -2,6 +2,7 @@ import serial
 import re
 from loctek_structs import Packet
 from packet_processor import AbstractPacketProcessor
+import time
 
 from abc import ABC, abstractmethod
 
@@ -28,7 +29,6 @@ class SerialPacketReceiver(AbstractPacketReceiver):
             buff = []
             while not self.stop_listening:
                 byte = conn.read().hex().upper()
-
                 buff.append(byte)                
                 if buff and buff[0] != Packet.BYTE.START:
                         buff = []
@@ -48,7 +48,7 @@ class PulseViewFilePacketReceiver(AbstractPacketReceiver):
 
 
     def start_receiving(self,  packet_processor: AbstractPacketProcessor)-> None:
-        pattern = re.compile(r"(\d+)-(\d+).+RX:\s+(\w+)")
+        pattern = re.compile(r"(\d+)-(\d+).+[RX|TX]:\s+(\w+)")
         buff = []
         t_pckg_start = -1
         t_pckg_end = -1
