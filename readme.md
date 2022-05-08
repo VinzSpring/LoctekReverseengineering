@@ -95,7 +95,7 @@ what to display as raw bytes. Now we can decode this information
 (take a look at the python example) to get the displayed height.
 Taddaaaaa.
 
-Shoutout to @devmanuel for being apart of this journey. 👍
+Shoutout to @dev-manuel for being apart of this journey. 👍
 
 
 Make sure to have a look at the utilities created alongside this project.
